@@ -1,0 +1,471 @@
+---
+title: "Changes in social group composition do not disrupt individual behavioral differences in a nectar-feeding bat"
+header-includes:
+   - \usepackage{lineno}
+   - \linenumbers
+   - \usepackage[backend=biber,sortlocale=de]{biblatex}
+   - \usepackage{float} \floatplacement{figure}{H}
+   - \newcommand{\beginsupplement}{\setcounter{table}{0}  \renewcommand{\thetable}{S\arabic{table}} \setcounter{figure}{0} \renewcommand{\thefigure}{S\arabic{figure}}}
+
+always_allow_html: yes
+output:
+  # bookdown::word_document2:
+  #     fig_caption: yes
+  #     number_sections: no
+  bookdown::pdf_document2:
+    number_sections: no
+    toc: no
+
+bibliography: SGC.bib
+# csl: behavioral-ecology.csl
+---
+
+Sabine Wintergerst^1,2^, York Winter^1\*\S^, Vladislav Nachev^1\*\S^
+
+^1^ Institut für Biologie, Humboldt Universität, Germany
+
+^2^ Fairchild Tropical Botanic Garden, 10901 Old Cutler Rd, Miami, FL 33156, USA
+
+^**\***^**For correspondence:** vladislav.nachev\@hu-berlin.de, york.winter\@charite.de
+
+**Present Address:** ^\^SInstitut für Biologie, Humboldt Universität, 10099 Berlin, Germany
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = FALSE,
+	fig.pos = "H",
+	message = FALSE,
+	warning = FALSE
+	)
+```
+
+\newpage
+
+# Abstract {.unnumbered}
+
+Even in highly dynamic social environments, individuals can differ consistently in their behavior.
+There are at least two hypotheses that propose mechanisms that can explain how consistent individual differences emerge and persist despite of the unpredictability of social interactions.
+The behavioral type hypothesis states that consistent individual differences in behavior in a social environment reflect individual differences in other contexts and thus, social group composition should have no influence on individual behavior.
+The social niche construction hypothesis on the other hand predicts that repeated social interactions and competition avoidance promote individual differences in behavior and as a consequence individual behavior should change depending on the social environment.
+However, these two hypotheses are non-mutually exclusive and different behavioral traits could be influenced to different degrees by changes in the social environment.
+We investigated the influence of social group composition on consistent individual differences in multiple behavioral traits in the nectar-feeding bat species *Glossophaga mutica*.
+Four social groups, of six female bats each, were confronted with a foraging context consisting of two flower patches.
+The short-term and long-term consistency of individual differences in five behavioral traits were quantified: Foraging activity, spread evenness of flower visits, agonistic behavior, sampling of the unrewarding patch and the latency to switch to a newly available patch.
+After assigning individuals to new social groups, individual behavior was reassessed in order to quantify the influence of social group composition on the consistency of individual differences in behavior.
+All three repeatable behavioral traits were consistent across social groups and differences between individuals also did not increase with time spent in the same social group.
+However, social group composition had an effect on individual foraging performance.
+These results indicate that social niche construction plays only a minor role in shaping consistent individual differences in the behavior of *G. mutica*.
+
+# Lay summary {.unnumbered}
+
+# Keywords: {.unnumbered}
+
+, bat, *Glossophaga*
+
+# 1. Introduction {.unnumbered}
+
+Animals show consistent individual differences in a wide variety of behaviors.
+In recent years, great attention has been given to research showing that individuals differ in animal personality traits like activity, exploration and aggressiveness [@bell_animal_2007; @wolf_animal_2012; @dall_empiricist_2014].
+In general, these individual differences in behavior are consistent across contexts and/or time [@bell_repeatability_2009].
+Moreover, personality traits can be correlated and thereby form behavioral syndromes [@sih_behavioral_2004], for example delicate skinks (*Lampropholis delicata*) that are more active tend to be faster explorers and are also more social [@michelangeli_are_2016].
+However, individuals of a given species can also consistently differ in other aspects of behavior like foraging [@alcalay_foraging_2015], dispersal behavior [@hogan_consequences_2014] or habitat selection [@ehlinger_habitat_1990].
+Finding consistent individual differences in social environments is interesting because social interactions are thought to be highly dynamic.
+There are at least two non-mutually-exclusive hypotheses that can explain why consistent individual differences in behavior in a social environment emerge and persist [@laskowski_strong_2014].
+The behavioral type hypothesis predicts that individuals differ in their behavior in a social environment because differences reflect individual behavior in other contexts due to common underlying mechanisms (e.g. pleiotropic genes) that reduce behavioral plasticity [@sih_behavioral_2004].
+In accordance with the behavioral type hypothesis, changes in the social environment should not influence individual behavior.
+However, since individuals behave according to their behavioral type, the behavioral composition of the group could influence individual and group performance (Pruitt and Riechert 2011).
+For example, a study with sticklebacks showed that individual differences in behavior were not influenced by group familiarity whereas the average social foraging behavior of group members was predicted by the behavioral composition of the group [@laskowski_strong_2014].
+Nevertheless, the social environment itself might play a role in shaping consistent individual differences in behavior.
+The social niche specialization hypothesis states that individual differences in behavior can emerge within a social context through repeated social interactions [@bergmuller_animal_2010; @montiglio_social_2013].
+In order to avoid competition, individuals might develop different behavioral strategies and as a consequence settle in different social niches.
+These individual differences in behavior could be maintained through negative-frequency dependent pay-offs, which means that the benefit of inhabiting a certain social niche is higher the less individuals occupy it (game-theoretic dynamics).
+Individual differences in behavior that have been established through social niche construction should be strongly influenced by changes of the social environment.
+For example, nutmeg mannikins differ consistently in their tactic use in a producer-scrounger foraging game but these individual differences were not stable across social groups [@morand-ferron_persistent_2011].
+Furthermore, social niche specialization also implies that initial differences between individuals in non-familiar groups should increase the longer individuals remain in the same social environment.
+However, social niche construction and innate behavioral differences could interact in order to shape consistent individual differences in behavior within a social environment and different behaviors might be affected to different extents by changes in the social group composition.
+For example, recently it has been shown that the amount of between-individual variation in agonistic behavior depends on how sociable a shrew species is whereas individual differences in activity did not change between social and less social species [@von_merten_social_2017].
+
+In this study, we investigated the role of repeated social interactions and the influence of changes in the social environment on individual differences in multiple behavioral traits in the nectar-feeding bat species *Glossophaga mutica*.
+Consistent individual differences in behavior were assessed in a social foraging regime similar to the simultaneous patch regime introduced in a study that investigated the influence of repeated social interactions on individual behavioral differences in sticklebacks [@laskowski_competition_2013].
+In this experimental schedule only one out of two food patches is rewarding at the beginning of a trial.
+After a certain time, a second food patch becomes rewarding without increasing the total amount of available food.
+Rewards are now distributed equally across the two patches.
+As a consequence, as soon as the second patch becomes active, the amount of food available in the first patch drops.
+Therefore, the competition increases in this patch and individuals start to distribute themselves across the two patches.
+In the current experiment, each patch consisted of five artificial flowers that delivered nectar rewards with a fixed time interval schedule.
+In order to keep the amount of available food constant, the time interval between rewards doubled without increasing the reward volume as soon as the second flower patch became active.
+In this experimental regime, multiple behavioral traits were investigated in four social groups of six female bats and the consistency of individual differences was assessed short-term (across seven nights) and long-term (across three months).
+Thereafter, bats were reassigned to new social groups in order to investigate the influence of the social environment on individual behavior.
+The following five behavioral traits were assessed in this experiment: Foraging activity, spread evenness of flower visits, agonistic behavior, sampling of the unrewarding patch and the latency to switch to a newly available patch.
+We expected that individuals which sample the unrewarding patch more often might also switch faster to the newly rewarding patch because they should be more likely to detect changes in the status of the second patch.
+Furthermore, similar to the results of the experiment with sticklebacks, individual differences in the latency to switch to the newly rewarding patch should increase the longer individuals remain in the same social group.
+With increasing time spent within the same social group, individuals might become familiar with the individual strategies of their groupmates and therefore some individuals might not switch to the new patch at all and others might switch faster.
+Thereby individual differences would increase with time and individual latency to switch should dependent on social group composition.
+Glossophagine bats have been shown to aggressively chase other bats away from artificial flowers [@wintergerst_sex-dependent_2021].
+Although, females rarely chased other individuals in mixed sexed groups, agonistic behavior in female-only groups has been shown to be as high as in male groups.
+Since agonistic behavior inherently has a social component, we expected that individual differences in agonistic behavior change depending on social group composition.
+Additionally, more aggressive individuals might be more likely to concentrate their flower visits on a smaller subset of flowers [@milinski_competitive_1984].
+Therefore, the distribution of individual visits across the flowers should also depend on social group composition.
+On the other hand, foraging activity, which is related to energy intake, is expected to be independent of repeated social interactions and social group composition.
+In addition to assess how the social group composition influences individual behavior, we explored how the behavioral composition of a social group affects foraging performance.
+
+# 2. Materials and methods {#methods}
+
+```{r, include = FALSE}
+library(ggpubr)
+library(gluedown)
+library(glue)
+library(tidyverse)
+library(flextable)
+library(rstatix)
+library(ggbeeswarm)
+# library(ggpattern)
+
+folder <- "data/"
+
+
+theme_serif <- function() { # consistent serif look for all plots
+  theme_pubr() +
+    theme(axis.text = element_text(size = 20, family = "serif"),
+        axis.line = element_line(color = "black", size = 1),
+        axis.title = element_text(size = 20, family = "serif"),
+        legend.text = element_text(size = 20, family = "serif"),
+        plot.title = element_text(size = 20, family = "serif", hjust = 0.5),
+        legend.title = element_text(size = 20, family = "serif", face = "bold", hjust = 0.5),
+        strip.text = element_text(size = 16, family = "serif"))
+}
+
+# theme_arial <- function() { # consistent sans serif look for all plots
+#   theme_pubr() +
+#     theme(axis.text = element_text(size = 20),
+#         axis.line = element_line(color = "black", size = 1),
+#         axis.title = element_text(size = 20),
+#         legend.text = element_text(size = 20),
+#         plot.title = element_text(size = 20, hjust = 0.5),
+#         legend.title = element_text(size = 20, face = "bold", hjust = 0.5),
+#         strip.text = element_text(size = 16))
+# }
+
+report_m_ci <- function(tbl, par = "_r_", brackets = "round") { # automate reporting of intervals, e.g. confidence, credible, etc.
+
+  open_bracket <- case_when(
+    brackets == "round" ~ "(",
+    brackets == "square" ~ "[",
+    brackets == "squiggly" ~ "{",
+    brackets == "none" ~ "",
+    TRUE ~ str_sub(brackets, 1, 1)
+  )
+  
+  close_bracket <- case_when(
+    brackets == "round" ~ ")",
+    brackets == "square" ~ "]",
+    brackets == "squiggly" ~ "}",
+    brackets == "none" ~ "",
+    TRUE ~ str_sub(brackets, 2, 2)
+  )
+  
+  tbl <- tbl %>% 
+    mutate(CI = paste0(open_bracket, conf.low, ", ", conf.high, close_bracket))
+  
+    return(glue(par, " = {tbl$estimate}, 95% CI = {tbl$CI}"))
+
+}
+
+# chase_summ <- read.csv2(paste0(folder, "ChaseSummary.csv"), dec = ".") %>% 
+#   mutate(group = factor(group, levels = c("mixed1", "mixed2",
+#                                           "mixed3", "mixed4",
+#                                           "6m", "6f")),
+#          sex = factor(sex, levels = c("m", "f")))
+# 
+# total_chases <- chase_summ %>% 
+#   ungroup() %>% 
+#   summarise(total_chases = sum(n_chases)) %>% 
+#   pull(total_chases)
+# 
+# nightly_chases <- chase_summ %>%
+#   mutate(incomplete_night = case_when(
+#     group == "mixed1" & group_night == 4 ~ TRUE,
+#     group == "mixed3" & group_night == 9 ~ TRUE,
+#     TRUE ~ FALSE
+#   )) %>% 
+#   filter(!incomplete_night) %>% 
+#   ungroup() %>% 
+#   group_by(group, group_night, cond) %>% 
+#   summarise(total_chases = sum(n_chases)) %>% 
+#   group_by(group, cond) %>% 
+#   summarise(n_nights = n(), total_chases = sum(total_chases), 
+#             chases_night = total_chases/n_nights) %>% 
+#   group_by(cond) %>% 
+#   summarise(mean = round(mean(chases_night), 1),
+#             sd = round(sd(chases_night), 1))
+```
+
+## (a) Subjects and housing
+
+Experiments were conducted from March to October 2015 with 24 females of the nectarivorous bat species *Glossophaga mutica* (formerly *Glossophaga soricina*, Pallas's long-tongued bat).
+Bats came from our captive colony and were older than one year as judged by finger joint ossification [\@brunet-rossini_methods_2009].
+They carried radio frequency identification (RFID) tags attached to cable tie collars (total weight of collar with tag = 0.2g, max. 2.4% of the body weight) that were removed after the experiment.
+Additionally, bats had numbered plastic split rings (A C Hughes Ltd., Middlesex, UK) around the forearm for visual identification.
+Temperature in the experimental and colony room was kept at 20-25°C, air humidity at 65-75%, and light conditions were 12:12 LD (light off at 16h).
+
+<!-- Experiments were conducted with 36 individuals of the small, (9-10g) neotropical nectarivorous bat species formerly identified as *Glossophaga mutica* (Pallas’s long-tongued bat).  In view of the recent taxonomic revision of the *G. mutica* species complex [@calahorra-oliart_cryptic_2021], it is relevant to note that the founders of our colony used in this and all our previous studies were caught at the Cueva de las Vegas, Municipio de Tenampulco, Mexico and transported to Germany in 1988 by Otto von Helversen. Thus they belong to the species *G. mutica*. -->
+
+## (b) Experimental set-up
+
+In the experimental room ten artificial flowers with automated nectar delivery [@winter_foraging_2005; @wintergerst_sex-dependent_2021] were mounted along a 4.2m bar at the height of 1.2m (Fig. \@ref(fig:design)).
+The distance between flowers was 0.4m.
+Flowers were divided into two groups of five to simulate two flower patches.
+Each patch was enclosed by a sheet-covered frame around the four sides and at the top to separate the groups of flowers spatially (Fig. \@ref(fig:design)).
+The only entrance to the patches was a 0.4m gap between the ground and the bottom end of this enclosure (Fig. \@ref(fig:design), dashed line).
+From this entrance bats had to fly up vertically to reach the flowers, which increased the costs of moving between patches.
+A stepper-motor syringe pump delivered nectar via tubes and pinch valves to the artificial flowers.
+Nectar rewards were triggered by the interruption of an infrared light barrier at the flower opening.
+The RFID reader below the flower head identified a bat's ID code.
+Flower visits (infrared light barrier interruptions) and ID sensor events were recorded during every experimental night.
+The reward schedule was configured using PhenoSoft Control (Phenosys GmbH, Berlin, Germany).
+Every detected event at a flower (including date, time, individual ID, duration of the event and amount of nectar delivered) was recorded for data analysis.
+
+(ref:design) Experimental set-up consisting of two spatially separated patches of five flowers each. (A) The ten flowers were mounted 1.2m above ground. They were divided into two patches, L and R. (B) During experiments the patches were separated by plastic sheets. To make it more demanding for bats to enter a patch, the only entrance was through a 0.4m gap above the ground. (C) Schematic drawing of the experimental set-up from above. The dashed line indicates the side with the patch entrance.
+
+```{r, design, fig.align="center", fig.cap="(ref:design)"}
+knitr::include_graphics("./images/design.pdf")
+```
+
+## (c) General procedure
+
+The general procedure was as described in [@wintergerst_sex-dependent_2021], reproduced below for clarity.\
+Each experimental group consisted of six female bats randomly caught from the colony. All bats were weighed before the experiment.\
+During the nightly experiments, in addition to the nectar provided by artificial flowers, bats had access to pollen and water and to 6$mL$ of additional food containing 1.2g NektarPlus (Nekton, Keltern, Germany) and 1.8g milk powder (Milasan Folgemilch 2, Sunval Baby Food GmbH, Mannheim, Germany) dissolved in water. Rewards at flowers consisted always of 30$\mu L$ nectar (15% w/w sugar concentration, sucrose: fructose 1:2 [no glucose, ask Sabine??]). Before the experimental schedule started, individuals were allowed to familiarize themselves with the set-up and the artificial flowers. Since during this training phase the plastic cover was removed, the two flower patches were not spatially separated and every flower visit was rewarded. This phase lasted for one to four nights until each bat visited the flowers regularly, which took 1-4 days. In total six individuals (belonging to three different experimental groups) did not visit the artificial flowers at all and were therefore replaced by six new females from the colony after the first night of habituation.\
+During the experiment, the two flower patches were covered and spatially separated (Fig. \@ref(fig:design)). Experimental nights were divided into two phases. During the first phase of the night only one of the two flower patches was rewarding, and therefore the resources were spatially clumped at a single location. The fixed time interval between rewards at each flower was 60s. During the second phase of the night both patches gave rewards, resources were evenly distributed across the two patches, and the fixed time interval between two rewards at a flower was increased to 120s. Therefore, the amount of food available per unit time did not change during the whole night; only the spatial distribution of food changed from the clumped resource condition with one patch rewarding (five flowers) during the first phase of the night to the distributed resource condition with two patches rewarding (ten flowers) during the second phase of the night. With this experimental schedule, the maximal amount of nectar the bats could collect was 108$mL$, which corresponds to 18$mL$ nectar per individual per night, roughly 150% of their daily requirement [@thomson_bats_2001]. The side of the rewarding patch during the first phase of the night was chosen pseudo-randomly and the same patch was never chosen in more than two consecutive nights.  
+
+## (d) Experimental schedule
+
+Each experimental run lasted for seven nights.
+The rewarding patch during the first part of the night (clumped resource condition) was chosen pseudo-randomly so that the same first rewarding patch was never repeated on more than two consecutive nights.
+The duration of the clumped resource condition varied between four and eight hours to avoid habituation to a specific time.
+The sequence of the first active patch and the duration of the clumped resource condition were generated for the first experimental run and then repeated for all subsequent runs (details see Table 1).
+
+Every individual experienced this experimental schedule three times (Fig. 2).
+During the first and the second experimental run ("Test" and "Retest") individuals remained in the same social group consisting of six females.
+The time between test and retest was three months.
+These two experimental runs were conducted to assess the long-term repeatability of individual differences in behavior.
+Directly after the retest individuals were assigned to new experimental groups ("New social group") to assess the influence of the social environment on the consistency of behavior.
+Between experimental runs, all individuals returned to the housing colony.
+One female became pregnant after the retest and could therefore not participate in the last experimental run during which individuals were assigned to new social groups.
+For this reason, another female was assigned to two new social groups.
+The individual data of this female during this last experimental run was only included once (data of the experimental group that was tested first) whereas group means were calculated using the data of this individual in both groups, so that every 1group consisted of six individuals.
+
+## (e) Behavioral traits
+
+### Agonistic behavior
+
+Individual agonistic behavior was assessed by quantifying how often an individual was chasing other individuals away from artificial flowers.
+These chasing events were indicated by a special sequence of events automatically recorded by the experimental system.
+For more details see Chapter 4.
+Furthermore, females rarely chased other bats in the presence of males [@wintergerst_sex-dependent_2021].
+However, the frequency of chasing in a group that only consisting of females was as high as in mixed sex groups.
+Notably, in contrast to males, females never succeeded in successfully monopolizing a flower patch by excluding other individuals.
+Since individuals that make more visits to artificial flowers also have more possibilities to chase other individuals away from artificial flowers we used the proportion of chasing events from the total number of visits as a measure for agonistic behavior.
+
+### Foraging activity
+
+Foraging activity was quantified as the number of visits at artificial flowers.
+Activity specifically during the clumped or uniformly distributed resource condition was calculated as the number of visits per hour since the duration of each condition differed between nights.
+
+### Spread evenness index
+
+The calculation of the spread evenness index was based on Simpson's Equitability [$E_D$, @simpson_measurement_1949] which can be used as a measure of how well an animal distributes its visits across the available artificial flowers [@ohashi_trapline_2009].
+The following equation was used to calculate the spread evenness index:
+
+$$
+E_D = \frac{1}{\sum_{i}^{S}(\frac{n_i}{N})^2}\times\frac{1}{S}
+$$
+where $n_i$ is the number of visits a bat made at feeder $i$, $N$ is the total number of visits and $S$ is the number of available flowers.
+This index can take values between 0 and 1.
+The higher the spread evenness index the more evenly a bat distributes its visits across the available flowers.
+The daily individual spread evenness index was only calculated during the uniformly distributed resource condition when both patches and therefore ten flowers were rewarding.
+
+### Latency to utilize new food patch
+
+To assess if individuals differ in how fast they switch to the newly available patch during the uniformly distributed resource condition, the latency to utilize the new food patch was quantified as the number of seconds between the activation of the second patch and the first visit an individual made at the newly available patch.
+
+### Sampling behavior
+
+Sampling was defined as the proportion of visits to the non-rewarding patch during the clumped resource condition.
+Since the position of the rewarding patch changed between nights, bats had to learn the new position of the rewarding patch at the beginning of each night.
+Sampling was only quantified after a bat reached the asymptotic phase of its performance curve.
+Details about the calculation of the individual sampling rate can be found in Chapter 2.
+
+### Efficiency
+
+One way to quantify individual foraging performance is efficiency.
+Here we measured efficiency by dividing the total amount of nectar intake by the number of visits during the uniformly distributed resource condition.
+With this calculation efficiency is a measure of the average amount of nectar a bat received per visit.
+
+### Nectar intake rate
+
+Nectar intake during the uniformly distributed resource condition was calculated as milliliters of nectar obtained per hour since the duration of conditions differed between nights.
+
+### Mean spatial overlap
+
+As previously proposed [@ohashi_trapline_2009], spatial overlap between foraging bats was calculated using Pianka's symmetrical index of niche overlap [@pianka_structure_1973].
+This index quantifies the spatial overlap of two individuals.
+In order to get one daily measurement for each bat, the spatial overlap between one bat and the five other bats of the respective group was calculated and then the mean of these five values was determined.
+The following equation was used to calculate Pianka's index $PI$ between for example bat 1 and 2:
+
+$$
+PI = \frac{\sum_{i}^{10}{p_{i1}}p_{i2}}{\sqrt{\sum_{i}^{10}p_{i1}\sum_{i}^{10}p_{i2}}}
+$$
+
+p is the proportion of visits to the ith flower made by bat 1 and 2 respectively.
+The value of $PI$ lies between 1 and 0.
+The higher the value of $PI$ calculated for two bats, the higher the spatial overlap between them.
+
+## (f) Statistical analysis
+
+Individual differences in five behavioral traits were analyzed: agonistic behavior, foraging activity, sampling behavior, spread evenness index and latency to utilize a new a food patch.
+Since foraging conditions changed between the clumped (one rewarding patch) and the distributed resource condition (two active patches), individuals might have adjusted their level of foraging activity and agonistic behavior accordingly.
+Thus, repeatability estimates might change between these two parts of the night.
+However, initial analyses failed to show an effect of resource condition on individual differences in foraging activity (Table A3.1; Figure A3.3) and proportion of chasing events (Table A 3.1; Figure A 3.4).
+Thus, foraging activity and agonistic behavior were estimated over whole nights in all further analyses, without discriminating between the clumped and distributed resource condition.
+A Bayesian Markov chain Monte Carlo generalized linear-mixed models (MCMCglmm package version 2.24, (Hadfield 2010)) was used to calculate repeatability of the five behavioral traits.
+In each model, the individual behavioral trait was used as a dependent variable and individual and experimental group were included as random effects.
+Day was initially included as a fixed effect to assess if behavioral traits were changing with time within each experimental run.
+However, estimates of repeatability only changed marginally with day as fixed effect and therefore we calculated repeatability estimates without any fixed effects which usually leads to a more conservative measure of repeatability.
+Sampling and agonistic behavior were quantified as proportions and therefore the multinomial2 family was used in these models.
+Latency to utilize a new food patch was assumed to have a Poisson error structure and Gaussian error structure was assumed for foraging activity.
+The spread evenness index takes values between 0 and 1 and can be considered as a rate, but not a proportion.
+Usually a beta regression can be used to analyze rates.
+However, beta regressions are not yet implemented in the MCMCglmm package and to my best knowledge packages that include beta regressions with random effects are not available.
+Thus, in order to be able to assume a Gaussian error structure, we used the z-transformation on the spread evenness index.
+The z-score quantifies the distance in terms of standard deviation of an individual value from the group mean and it was calculated daily and within each experimental group.
+The repeatability of individual z-scores would therefore provide information of how consistently individuals remained at their relative position within an experimental group.
+As priors, we used an inverse-Wishart distribution for the residual variance and a parameter expanded prior for random effects.
+Analysis of autocorrelation, effective sample size and visual inspection of trace plots were used to assess the models.
+Repeatability, the proportion of variance that can be explained by between-individual differences, was calculated following @nakagawa_repeatability_2010. Since each experimental run lasted for seven days, behavioral traits were measured seven times for each individual for each run and repeatability of behavioral traits was calculated for each experimental run ("Test", "Retest after three months", "New social group").
+Additionally, to assess the potential change of between-individual differences, repeatability estimates were also calculated for the first three days and last three days of each experimental run.
+Spearman rank correlation coefficients were calculated to explore possible between-individual correlations of behavioral traits which would indicate a behavioral syndrome.
+To investigate the long-term consistency of individual differences in behavioral traits and the consistency of individual behavior across social groups the individual mean behavior was calculated for each experimental run.
+Linear (foraging activity and agonistic behavior) and beta regressions (spread evenness index) were used to assess the correlations of individual mean behavior.
+To explore the influence of consistent individual differences on individual and group foraging performance we calculated the mean nectar intake rate, Pianka's index and foraging efficiency during the uniformly distributed resource condition.
+However, the mean spatial overlap of foraging individuals was highly collinear with the measure of individual spread evenness index (Spearman's $\rho$ = 0.95, p < 0.001) and therefore was dropped from further analysis.
+Linear models were used to explore potential correlations.
+All analysis was performed in R version 3.3.2 (Team R Core 2016).
+All linear mixed-effects models were performed using the R package "nlme" version 3.1-128 (Pinheiro et al. 2007), all linear models were performed using the R package "lme4" version 1.1-12 (Bates et al. 2014) and beta regressions were performed using the R package "betareg" version 3.1-0 (Cribari-Neto and Zeileis 2009).
+
+<!-- To investigate the difference in chasing behavior between males and females and between the resource conditions (one versus two rewarding patches) a Bayesian generalized linear mixed model [`MCMCglmm`, @hadfield_mcmc_2010] with a binomial error structure was used. Body weight as an approximation of size and the full interaction between resource condition and sex were included as fixed effects and the influence of these fixed effects on the proportion of chasing events was assessed. Experimental group and individual were included as random effects. The same model structure was used to address the question if the proportion of being chased was influenced by these independent variables. If one or more individuals start to defend flowers and thus exclude others from drinking, nectar consumption should increasingly differ between individuals since the successful chaser should gain a higher nectar intake thus reducing the intake of the chased individuals. Therefore, the between-individual difference in nectar consumption over the course of the experiment was compared between experimental groups and resource conditions (clumped vs. distributed). First, each individual's total nectar consumption standardized by the number of hours of foraging during the clumped (one rewarding patch) and distributed (two rewarding patches) resource condition was determined for each experimental night. Then these data were used to calculate group standard deviations, separately for the males and females of each group. In order to assess the influence of resource defense on the individual differences in nectar consumption (standard deviation of nectar intake) we fit a `MCMCglmm` model with a Gaussian error structure and the following fixed effects: sex, experimental night (centered), and resource condition (clumped or distributed), as well as all two-way interactions. Again, we included group and individual as random effects.\ -->
+
+<!-- By plotting individual nectar consumption during the last two nights of the experiment against the frequency of chasing other individuals, two non-overlapping groups of males were obtained, which were labeled dominant and subordinate males, respectively. Such a clear pattern was not observed in females. The identification of dominant individuals was also supported by calculating the individual Glicko ratings [@glickman_parameter_1999; @so_social_2015] from all chasing events over the last two experimental nights in each group. In the Glicko Rating algorithm individuals gain or lose ranking points based on their wins or losses and the rating of their opponent [@glickman_parameter_1999; @so_social_2015]. Glicko ratings were analyzed using the `PlayerRatings` package in R [@stephenson_playerratings_2020]. Based on nectar consumption, the frequency of chasing events and the individual Glicko group ranks (from 1 to 6, with 1 corresponding to the highest Glicko rating), each group contained individuals belonging to one of three different types of social status: female, dominant male, and subordinate male. To address the question whether nectar consumption varied depending on social status during the early and late stages of the experiment we used Welch's tests and adjusted the p values using the Holms method for multiple comparisons.\ -->
+
+All statistical analyses were conducted using R [@r_core_team_r:_2021].
+
+# 3. Results
+
+# 4. Discussion
+
+Both the behavioral type and the social niche construction hypothesis propose mechanisms that can explain how individual behavioral differences emerge and persist in a highly dynamic social environment [@sih_behavioral_2004-1; @bergmuller_animal_2010].
+The social niche construction hypothesis predicts that repeated social interactions and competition avoidance can promote individual differences in behavior.
+On the other hand, the behavioral type hypothesis states that individual differences in behavior in a highly dynamic social environment reflect individual behavior in other contexts and therefore individual differences in behavior should not be affected by changes in the social environment.
+These two hypotheses are non-mutually exclusive and therefore they could influence different behavioral traits to different degrees.
+In this chapter, we assessed the consistency of individual behavior in a social foraging context across different social groups in order to investigate the role of the social environment in shaping individual behavioral differences in the nectar-feeding bat species *Glossophaga mutica*.
+Three behavioral traits, agonistic behavior, foraging activity and spread evenness of flower visits, were highly repeatable short-term within experimental runs and long-term over three months.
+In accordance with the behavioral type hypothesis, individual behavior was consistent across social group.
+Therefore, we explored how the behavioral composition of the group could influence the performance during foraging.
+We could show that the average spread evenness index (which is negatively correlated with agonistic behavior across individuals) influenced the average foraging efficiency of individuals and also individual nectar intake was influenced to some extent by changes in the social group composition.
+
+## (a) Influence of social environment on foraging activity
+
+As predicted, individual foraging activity was independent of social group composition.
+This result is in line with a previous finding showing that the level of individual differences in activity did not differ between social and non-social shrew species [@von_merten_social_2017]. Foraging activity measured as the number of flower visits is related to individual nectar consumption and food intake determines how much energy an individual can spend. In Chapter 3, we could show that individuals of the closely related species *G. commissarisi* differ consistently in their daily energy expenditure and individual differences in energy metabolism have been proposed to correlate with different life-history strategies [@careau_energy_2008; @reale_personality_2010].
+Therefore, in line with the behavioral type hypothesis, individual differences in foraging activity and consequently energy intake might reflect individual differences in other contexts independent of the social environment.
+
+## (b) Influence of social environment on agonistic behavior
+
+Contrary to foraging activity, absolute values of individual agonistic behavior did not correlate across social groups.
+However, individuals that showed high agonistic behavior relative to the group average were also more likely to show higher than average agonistic behavior in new social groups as shown by the correlation of z-scores (Figure 5.2 E and F).
+Individual agonistic behavior was quantified as the proportion of chasing events at artificial flowers on the total number of visits.
+However, the number of chasing possibilities does not only depend on the individual aggressive tendency but also on the behavior of other group members.
+For example, other individuals might have avoided proximity to aggressive individuals and therefore diminished their amount of chasing opportunities independent of their individual aggressive tendency.
+Since the relative amount of agonistic behavior was consistent across social groups, social niche construction seems to play also only a minor role in shaping individual differences in aggressiveness.
+
+## (c) Influence of social environment on spread evenness index
+
+Agonistic behavior and spread evenness index of flower visits were correlated across individuals (Table 5.2) In accordance with the result that the social environment had only a minor effect on individual agonistic behavior, individual spread evenness index was also correlated across social groups.
+How individuals distribute their visits across flowers could have been a consequence of differences in aggressiveness associated with competitive ability.
+However, individuals differed in their spread evenness index already during the first three days of the first experimental run (Table 5.3) indicating that aggressive individuals might have a tendency to visit less flowers even before they could demonstrate their competitive ability.
+This is in line with results from a previous study that has shown that *G. commissarisi* differ consistently in the number of flowers they visit in an flower array independent of aggressive interactions [@nachev_behavioral_2019].
+
+## (d) The role of repeated social interactions
+
+Although individual behavior was consistent across social groups in all three repeatable behavioral traits (agonistic behavior, foraging activity and spread evenness index), repeated social interactions could have still played a role in shaping differences between individuals by reducing within-individual variation [find a citation].
+However, repeatability estimates did not change with time (Table 5.3) in any of the three behavioral traits, supporting the hypothesis that differences in behavior of bats in a social foraging context were the result of individual differences in other contexts rather than the result of repeated social interactions.
+However, since the confidence intervals of these repeatability estimates were very wide, the failure of showing an increase could also be due to low statistical power.
+Nevertheless, repeatability estimates during the first three days are already significantly greater than zero showing that individuals already differed consistently at the beginning of each experimental run.
+
+## (e) Latency to switch to a newly availably flower patch
+
+Contrary to results of a study with sticklebacks that used the same experimental design, individual bats did not differ in their latency to switch to a newly rewarding patch.
+The experiment with sticklebacks showed that individual fish differed consistently in their latency to switch to a newly available patch and that these differences increased the longer individuals remained in the same social group [@laskowski_competition_2013]. However, a subsequent experiment showed that switch latency was predicted by individual differences in other behaviors measured in different contexts like the tendency to shoal with other individuals. This showed that not only repeated social interactions played a role in shaping individual differences in switch delay [@laskowski_strong_2014].
+In the present experiment with nectarivorous bats, the main reason for the lack of individual differences in switch delay might have been the close proximity of the two patches and consequently the very low costs of switching to the newly available patch.
+Additionally, every time an artificial flower delivered a reward, the valve controlling the nectar flow was audible which could have served as a signal indicating the availability of the new patch as soon as one bat started to exploit it.
+In this case leaving the first flower patch might have not been due to competition avoidance but due to an audible signal and the benefit of being the first to switch was therefore very low.
+
+## (f) Sampling of unrewarding patch
+
+Although, individuals of the closely related species *G. commissarisi* have been shown to differ in how much they sample unrewarding flowers, in the present experiment the repeatability of sampling behavior was very low and did not even differ from zero during the last experimental trial with new social groups (Fig. 5.2).
+Contrary to the previous experiment with G.
+commissarisi (Chapter 2), in this experiment the same five spatially concentrated artificial flowers were rewarding for all bats instead of two single rewarding flowers per individual distributed among ten unrewarding flowers.
+This indicates that individual differences in sampling might be only present in more challenging situations.
+In line with this proposition, individual differences in learning in great tits have been shown to be also only present in difficult tasks [@titulaer_personality_2012].
+
+## (g) Influence of behavioral group composition on foraging performance
+
+In accordance with the behavioral type hypothesis, individual differences in all three repeatable behavioral traits were consistent across social groups.
+Since individuals did not change their behavior in response to changes in social environment, individual foraging performance might be influenced by the behavior of its group members [@bleakley_nonadditive_2007].
+An exploratory analysis showed that average 89 group spread evenness index indeed influenced the mean spatial overlap of group members and the lower the mean spatial overlap the higher the mean individual foraging efficiency was.
+Since the individual spread evenness index correlated significantly with agonistic behavior, individual efficiency was higher in groups consisting of individuals with higher mean agonistic behavior.
+
+Individuals did not adapt their foraging activity to changes in social group composition, individual nectar intake could be influenced by changes in the social environment.
+The analysis showed that individual mean nectar intake rate during the uniformly distributed resource condition, was significantly correlated between the test and the retest after three months (t = 2.87, p = 0.009, Figure 4.5A).
+This indicates that the individual nectar intake rate was stable within the same social group.
+However, individual mean nectar intake during both the first test and the retest after three months were only poor predictors of the individual mean nectar intake rate during the experimental run with new social groups (Figure 5.5 B and C) which indicates that the foraging performance measured as nectar intake might indeed be influenced by social group composition.
+
+## (h) Conclusion
+
+In the present experiment, we confronted *G. mutica* with a social foraging design in which individual foraging decisions influenced the experience of other members of the group.
+In their natural environment however, *Glossophaga* have been observed to forage mainly independently instead of in social flocks [@heithaus_bat_1974]. The lack of evidence for social niche construction in the behavioral traits measured in these bats is therefore in line with the hypothesis that the importance of the social niche construction on shaping consistent individual differences in behavior should depend on the sociability of the species [@von_merten_social_2017]. However, recently it has been shown that *G. mutica* are capable of using social information to learn new profitable flower positions [@rose_learning_2016] indicating that there is a social component in their foraging behavior. Additionally, even though individual differences in behaviors might be innate they can still be influenced by group composition and habitat, like it has been shown for individual differences in boldness of perches [@magnhagen_is_2005].
+
+Further studies that investigate the role of social niche construction in shaping between-individual variation of behavioral traits in various species can contribute to the understanding of the ecological conditions that favor consistent individual differences due to social niche construction.
+
+# Supplementary material {.unnumbered}
+
+\beginsupplement
+
+\newpage
+
+# Authors' contributions
+
+S.W. Conceptualization, Methodology, Software, Data collection, Formal Analysis, Video Analysis, Writing---original draft.
+V.N.
+Conceptualization, Methodology, Software, Formal Analysis, Data curation, Writing---review and editing, Visualization, Supervision, Project Administration.\
+Y.W. Conceptualization, Resources, Methodology, Software (data acquisition), Writing---review and editing, Supervision, Funding.
+
+# Competing interests
+
+We declare we have no competing interests.
+
+# Funding
+
+S.W.
+was supported by an Elsa-Neumann-Stipendium des Landes Berlin.
+
+# Acknowledgements
+
+We thank Katja Frei and Peggy Hoffmann for assistance with the main experiments and animal keeping, Alexej Schatz for programming of the control software, and Peter Spende, Francesco Bagorda, and Waldemar Krzok for help with the experimental hardware.
+We also thank Marion Rivalan and Lucille Alonso for a fruitful discussion on the analysis of social behavior.
+
+# Data Availability
+
+All data and code are available in the Zenodo repository: xxx \newpage
+
+# References
