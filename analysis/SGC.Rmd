@@ -251,17 +251,14 @@ The time between test and retest was three months.
 These two experimental runs were conducted to assess the long-term repeatability of individual differences in behavior.
 Directly after the retest individuals were assigned to new experimental groups ("New social group") to assess the influence of the social environment on the consistency of behavior.
 Between experimental runs, all individuals returned to the housing colony.
-One female became pregnant after the retest and could therefore not participate in the last experimental run during which individuals were assigned to new social groups.
-For this reason, another female was assigned to two new social groups.
-The individual data of this female during this last experimental run was only included once (data of the experimental group that was tested first) whereas group means were calculated using the data of this individual in both groups, so that every 1group consisted of six individuals.
+Due to pregnancy after the retest, one female had to be replaced with another individual, in order to keep group sizes constant. As the replacement female had already participated in a complete experimental run, its data in the new social group were only used to calculate the group means, but not individually analyzed.
 
 ## (e) Behavioral traits
 
 ### Agonistic behavior
 
-Individual agonistic behavior was assessed by quantifying how often an individual was chasing other individuals away from artificial flowers.
-These chasing events were indicated by a special sequence of events automatically recorded by the experimental system.
-For more details see Chapter 4.
+Individual agonistic behavior was assessed by quantifying how often an individual chased others away from artificial flowers.
+These chasing events were indicated by a special sequence of events automatically recorded by the experimental system [@wintergerst_sex-dependent_2021].
 Furthermore, females rarely chased other bats in the presence of males [@wintergerst_sex-dependent_2021].
 However, the frequency of chasing in a group that only consisting of females was as high as in mixed sex groups.
 Notably, in contrast to males, females never succeeded in successfully monopolizing a flower patch by excluding other individuals.
