@@ -235,39 +235,50 @@ knitr::include_graphics("./images/design.pdf")
 
 The general procedure was as described in [@wintergerst_sex-dependent_2021], reproduced below for clarity.\
 Each experimental group consisted of six female bats randomly caught from the colony. All bats were weighed before the experiment.\
-During the nightly experiments, in addition to the nectar provided by artificial flowers, bats had access to pollen and water and to 6$mL$ of additional food containing 1.2g NektarPlus (Nekton, Keltern, Germany) and 1.8g milk powder (Milasan Folgemilch 2, Sunval Baby Food GmbH, Mannheim, Germany) dissolved in water. Rewards at flowers consisted always of 30$\mu L$ nectar (15% w/w sugar concentration, sucrose: fructose 1:2 [no glucose, ask Sabine??]). Before the experimental schedule started, individuals were allowed to familiarize themselves with the set-up and the artificial flowers. Since during this training phase the plastic cover was removed, the two flower patches were not spatially separated and every flower visit was rewarded. This phase lasted for one to four nights until each bat visited the flowers regularly, which took 1-4 days. In total six individuals (belonging to three different experimental groups) did not visit the artificial flowers at all and were therefore replaced by six new females from the colony after the first night of habituation.\
+During the nightly experiments, in addition to the nectar provided by artificial flowers, bats had access to pollen and water and to 6$mL$ of additional food containing 1.2g NektarPlus (Nekton, Keltern, Germany) and 1.8g milk powder (Milasan Folgemilch 2, Sunval Baby Food GmbH, Mannheim, Germany) dissolved in water. Rewards at flowers consisted always of 30$\mu L$ nectar (15% w/w sugar concentration, sucrose: fructose 1:2 [no glucose, ask Sabine??]). Before the experimental schedule started, individuals were allowed to familiarize themselves with the set-up and the artificial flowers. Since during this training phase the plastic cover was removed, the two flower patches were not spatially separated and every flower visit was rewarded. This phase lasted for one to four nights until each bat visited the flowers regularly, which took 1-4 nights. In total six individuals (belonging to three different experimental groups) did not visit the artificial flowers at all and were therefore replaced by six new females from the colony after the first night of habituation.\
 During the experiment, the two flower patches were covered and spatially separated (Fig. \@ref(fig:design)). Experimental nights were divided into two phases. During the first phase of the night only one of the two flower patches was rewarding, and therefore the resources were spatially clumped at a single location. The fixed time interval between rewards at each flower was 60s. During the second phase of the night both patches gave rewards, resources were evenly distributed across the two patches, and the fixed time interval between two rewards at a flower was increased to 120s. Therefore, the amount of food available per unit time did not change during the whole night; only the spatial distribution of food changed from the clumped resource condition with one patch rewarding (five flowers) during the first phase of the night to the distributed resource condition with two patches rewarding (ten flowers) during the second phase of the night. With this experimental schedule, the maximal amount of nectar the bats could collect was 108$mL$, which corresponds to 18$mL$ nectar per individual per night, roughly 150% of their daily requirement [@thomson_bats_2001]. The side of the rewarding patch during the first phase of the night was chosen pseudo-randomly and the same patch was never chosen in more than two consecutive nights.  
 
 ## (d) Experimental schedule
 
-Each experimental run lasted for seven nights.
-The rewarding patch during the first part of the night (clumped resource condition) was chosen pseudo-randomly so that the same first rewarding patch was never repeated on more than two consecutive nights.
-The duration of the clumped resource condition varied between four and eight hours to avoid habituation to a specific time.
-The sequence of the first active patch and the duration of the clumped resource condition were generated for the first experimental run and then repeated for all subsequent runs (details see Table 1).
+```{r, patchseq, tab.cap="Sequence of the first active patch and the duration of the clumped resource condition during each experimental run."}
 
-Every individual experienced this experimental schedule three times (Fig. 2).
-During the first and the second experimental run ("Test" and "Retest") individuals remained in the same social group consisting of six females.
-The time between test and retest was three months.
-These two experimental runs were conducted to assess the long-term repeatability of individual differences in behavior.
-Directly after the retest individuals were assigned to new experimental groups ("New social group") to assess the influence of the social environment on the consistency of behavior.
-Between experimental runs, all individuals returned to the housing colony.
-Due to pregnancy after the retest, one female had to be replaced with another individual, in order to keep group sizes constant. As the replacement female had already participated in a complete experimental run, its data in the new social group were only used to calculate the group means, but not individually analyzed.
+schedule <- tibble(night = 1:7, 
+                   initial_patch = c(1, 2, 1, 1, 2, 2, 1),
+                   dur_clumped = c(6, 8, 5, 7, 4, 6, 8))
+
+schedule %>% 
+  flextable() %>% 
+  set_header_labels(initial_patch = "initial active patch",
+                    dur_clumped = "duration of clumped resource condition [h]") %>%
+  add_footer_row(values = 'Note: Every night the experiment started with the clumped resource condition.', colwidths = 3) %>% 
+  footnote(i = 1, j = 2, value = as_paragraph("Patch 1 included flowers 1-5, and patch 2 - flowers 6-10"),
+           ref_symbols = "a", part = "header")
+
+```
+
+
+Each experimental run lasted for seven nights. The rewarding patch during the first part of the night (clumped resource condition) was chosen pseudo-randomly so that it was never repeated on more than two consecutive nights. The duration of the clumped resource condition varied from 4 to 8 hours to avoid habituation to a specific time. All experimental runs used the same sequence of initial active patches and durations of the clumped resource condition (Table \@ref(tab:patchseq)).
+
+(ref:schedule) Each experimental run for the four groups of six female bats lasted for seven nights. During the first experimental run (“Test”), we assessed individual differences in multiple behavioral traits in a foraging task with two patches of artificial flowers. We then assessed the long-term consistency of individual behavior within the same social group by repeating the same experimental procedure three months later (“Retest”). Finally, we reassigned individuals pseudo-randomly to new social groups and performed the last experimental run (“New social group”) to assess the consistency of individual differences in behavior across different social groups.
+
+```{r, schedule, fig.align="center", fig.cap="(ref:schedule)"}
+knitr::include_graphics("./images/schedule.pdf")
+```
+
+Every individual experienced this experimental schedule three times (Fig. \@ref(fig:schedule)). During the first and the second experimental run ("Test" and "Retest") individuals remained in the same social group consisting of six females. The time between test and retest was three months. These two experimental runs were conducted to assess the long-term repeatability of individual differences in behavior.
+Directly after the retest individuals were assigned to new experimental groups ("New social group") to assess the influence of the social environment on the consistency of behavior. Between experimental runs, all individuals returned to the housing colony. Due to pregnancy after the retest, one female had to be replaced with another individual, in order to keep group sizes constant. As the replacement female had already participated in a complete experimental run, its data in the second new social group were only used to calculate the group means, but not individually analyzed.
 
 ## (e) Behavioral traits
 
 ### Agonistic behavior
 
-Individual agonistic behavior was assessed by quantifying how often an individual chased others away from artificial flowers.
-These chasing events were indicated by a special sequence of events automatically recorded by the experimental system [@wintergerst_sex-dependent_2021].
-Furthermore, females rarely chased other bats in the presence of males [@wintergerst_sex-dependent_2021].
-However, the frequency of chasing in a group that only consisting of females was as high as in mixed sex groups.
-Notably, in contrast to males, females never succeeded in successfully monopolizing a flower patch by excluding other individuals.
-Since individuals that make more visits to artificial flowers also have more possibilities to chase other individuals away from artificial flowers we used the proportion of chasing events from the total number of visits as a measure for agonistic behavior.
+Individual agonistic behavior was assessed by quantifying how often an individual chased others away from artificial flowers. These detection of these chasing events occurred automatically, as previously described [@wintergerst_sex-dependent_2021].
+In our previous observations females rarely chased other bats in the presence of males, but in single-sex groups the frequency of chases were similar between males and females [@wintergerst_sex-dependent_2021].
+Notably, in contrast to males, females never succeeded in successfully monopolizing a complete flower patch by excluding all other individuals. Since individuals that make are more frequently detected at artificial flowers also have more possibilities to chase other individuals away from artificial flowers we used the proportion of chasing events from the total number of detections as a measure for agonistic behavior.
 
 ### Foraging activity
 
-Foraging activity was quantified as the number of visits at artificial flowers.
-Activity specifically during the clumped or uniformly distributed resource condition was calculated as the number of visits per hour since the duration of each condition differed between nights.
+Foraging activity was quantified as the number of visits [perhaps also better to take total detections here?] at artificial flowers. Activity specifically during the clumped or uniformly distributed resource condition was calculated as the number of visits per hour since the duration of each condition differed between nights.
 
 ### Spread evenness index
 
@@ -277,10 +288,7 @@ The following equation was used to calculate the spread evenness index:
 $$
 E_D = \frac{1}{\sum_{i}^{S}(\frac{n_i}{N})^2}\times\frac{1}{S}
 $$
-where $n_i$ is the number of visits a bat made at feeder $i$, $N$ is the total number of visits and $S$ is the number of available flowers.
-This index can take values between 0 and 1.
-The higher the spread evenness index the more evenly a bat distributes its visits across the available flowers.
-The daily individual spread evenness index was only calculated during the uniformly distributed resource condition when both patches and therefore ten flowers were rewarding.
+where $n_i$ is the number of visits a bat made at feeder $i$, $N$ is the total number of visits and $S$ is the number of available flowers. This index can take values between 0 and 1. The higher the spread evenness index the more evenly a bat distributes its visits across the available flowers. The daily individual spread evenness index was only calculated during the uniformly distributed resource condition when both patches and all ten flowers were rewarding.
 
 ### Latency to utilize new food patch
 
