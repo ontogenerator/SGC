@@ -1,5 +1,5 @@
 ---
-title: "Changes in social group composition do not disrupt individual behavioral differences in a nectar-feeding bat"
+title: "Changes in social group composition do not disrupt individual behavioral differences in female nectar-feeding bats"
 header-includes:
    - \usepackage{lineno}
    - \linenumbers
@@ -64,23 +64,12 @@ These results indicate that social niche construction plays only a minor role in
 
 # 1. Introduction {.unnumbered}
 
-Animals show consistent individual differences in a wide variety of behaviors.
-In recent years, great attention has been given to research showing that individuals differ in animal personality traits like activity, exploration and aggressiveness [@bell_animal_2007; @wolf_animal_2012; @dall_empiricist_2014].
-In general, these individual differences in behavior are consistent across contexts and/or time [@bell_repeatability_2009].
-Moreover, personality traits can be correlated and thereby form behavioral syndromes [@sih_behavioral_2004], for example delicate skinks (*Lampropholis delicata*) that are more active tend to be faster explorers and are also more social [@michelangeli_are_2016].
-However, individuals of a given species can also consistently differ in other aspects of behavior like foraging [@alcalay_foraging_2015], dispersal behavior [@hogan_consequences_2014] or habitat selection [@ehlinger_habitat_1990].
-Finding consistent individual differences in social environments is interesting because social interactions are thought to be highly dynamic.
+In recent years, great attention has been given to research showing that individuals differ in animal personality traits like activity, exploration and aggressiveness [@bell_animal_2007; @wolf_animal_2012; @dall_empiricist_2014]. In general, these individual differences in behavior are consistent across contexts and/or time [@bell_repeatability_2009]. Moreover, personality traits can be correlated and thereby form behavioral syndromes [@sih_behavioral_2004], for example delicate skinks (*Lampropholis delicata*) that are more active tend to be faster explorers and are also more social [@michelangeli_are_2016]. However, individuals of a given species can also consistently differ in other aspects of behavior like foraging [@alcalay_foraging_2015], dispersal behavior [@hogan_consequences_2014] or habitat selection [@ehlinger_habitat_1990]. Finding consistent individual differences in social environments is interesting because social interactions are thought to be highly dynamic.
 There are at least two non-mutually-exclusive hypotheses that can explain why consistent individual differences in behavior in a social environment emerge and persist [@laskowski_strong_2014].
-The behavioral type hypothesis predicts that individuals differ in their behavior in a social environment because differences reflect individual behavior in other contexts due to common underlying mechanisms (e.g. pleiotropic genes) that reduce behavioral plasticity [@sih_behavioral_2004].
-In accordance with the behavioral type hypothesis, changes in the social environment should not influence individual behavior.
-However, since individuals behave according to their behavioral type, the behavioral composition of the group could influence individual and group performance (Pruitt and Riechert 2011).
-For example, a study with sticklebacks showed that individual differences in behavior were not influenced by group familiarity whereas the average social foraging behavior of group members was predicted by the behavioral composition of the group [@laskowski_strong_2014].
-Nevertheless, the social environment itself might play a role in shaping consistent individual differences in behavior.
-The social niche specialization hypothesis states that individual differences in behavior can emerge within a social context through repeated social interactions [@bergmuller_animal_2010; @montiglio_social_2013].
-In order to avoid competition, individuals might develop different behavioral strategies and as a consequence settle in different social niches.
-These individual differences in behavior could be maintained through negative-frequency dependent pay-offs, which means that the benefit of inhabiting a certain social niche is higher the less individuals occupy it (game-theoretic dynamics).
-Individual differences in behavior that have been established through social niche construction should be strongly influenced by changes of the social environment.
-For example, nutmeg mannikins differ consistently in their tactic use in a producer-scrounger foraging game but these individual differences were not stable across social groups [@morand-ferron_persistent_2011].
+The behavioral type hypothesis predicts that individuals differ in their behavior in a social environment because differences reflect individual behavior in other contexts due to common underlying mechanisms (e.g. pleiotropic genes) that reduce behavioral plasticity [@sih_behavioral_2004]. In accordance with the behavioral type hypothesis, changes in the social environment should not influence individual behavior.
+However, since individuals behave according to their behavioral type, the behavioral composition of the group could influence individual and group performance [@jolles_consistent_2017]. For example, a study with sticklebacks showed that individual differences in behavior were not influenced by group familiarity whereas the average social foraging behavior of group members was predicted by the behavioral composition of the group [@laskowski_strong_2014]. Nevertheless, the social environment itself might play a role in shaping consistent individual differences in behavior.\
+The social niche specialization hypothesis states that individual differences in behavior can emerge within a social context through repeated social interactions [@bergmuller_animal_2010; @montiglio_social_2013]. In order to avoid competition, individuals might develop different behavioral strategies and as a consequence settle in different social niches. These individual differences in behavior could be maintained through negative-frequency dependent pay-offs, which means that the benefit of inhabiting a certain social niche is higher the less individuals occupy it (game-theoretic dynamics).
+Individual differences in behavior that have been established through social niche construction should be strongly influenced by changes of the social environment. For example, nutmeg mannikins differ consistently in their tactic use in a producer-scrounger foraging game but these individual differences were not stable across social groups [@morand-ferron_persistent_2011].
 Furthermore, social niche specialization also implies that initial differences between individuals in non-familiar groups should increase the longer individuals remain in the same social environment.
 However, social niche construction and innate behavioral differences could interact in order to shape consistent individual differences in behavior within a social environment and different behaviors might be affected to different extents by changes in the social group composition.
 For example, recently it has been shown that the amount of between-individual variation in agonistic behavior depends on how sociable a shrew species is whereas individual differences in activity did not change between social and less social species [@von_merten_social_2017].
@@ -283,29 +272,25 @@ Foraging activity was quantified as the number of visits [perhaps also better to
 ### Spread evenness index
 
 The calculation of the spread evenness index was based on Simpson's Equitability [$E_D$, @simpson_measurement_1949] which can be used as a measure of how well an animal distributes its visits across the available artificial flowers [@ohashi_trapline_2009].
-The following equation was used to calculate the spread evenness index:
+We calculated the spread evenness index as:
 
 $$
 E_D = \frac{1}{\sum_{i}^{S}(\frac{n_i}{N})^2}\times\frac{1}{S}
 $$
 where $n_i$ is the number of visits a bat made at feeder $i$, $N$ is the total number of visits and $S$ is the number of available flowers. This index can take values between 0 and 1. The higher the spread evenness index the more evenly a bat distributes its visits across the available flowers. The daily individual spread evenness index was only calculated during the uniformly distributed resource condition when both patches and all ten flowers were rewarding.
 
-### Latency to utilize new food patch
+### Latency to forage in new food patch
 
-To assess if individuals differ in how fast they switch to the newly available patch during the uniformly distributed resource condition, the latency to utilize the new food patch was quantified as the number of seconds between the activation of the second patch and the first visit an individual made at the newly available patch.
+To assess if individuals differed in how fast they switched to the newly available patch during the uniformly distributed resource condition, the latency to forage in the new food patch was calculated as the number of seconds between the activation of the second patch and the first visit at that patch.
 
 ### Sampling behavior
 
-Sampling was defined as the proportion of visits to the non-rewarding patch during the clumped resource condition.
-Since the position of the rewarding patch changed between nights, bats had to learn the new position of the rewarding patch at the beginning of each night.
-Sampling was only quantified after a bat reached the asymptotic phase of its performance curve.
-Details about the calculation of the individual sampling rate can be found in Chapter 2.
+Sampling was defined as the proportion of visits to the non-rewarding patch during the clumped resource condition. Bats had to learn the new position of the rewarding patch at the beginning of each night.
+Sampling was only quantified after a bat reached the asymptotic phase of its performance curve. We assumed that all visits made to non-rewarding flowers during the asymptotic phase were for exploration and collecting information about the current state of these flowers, i.e. sampling.  For the analysis, we grouped individual visits in blocks of 20. The beginning of the asymptotic phase was determined as the second of two consecutive blocks with a number of visits to the rewarding flowers higher than the daily mean [Nachev et al., in prep.].
 
 ### Efficiency
 
-One way to quantify individual foraging performance is efficiency.
-Here we measured efficiency by dividing the total amount of nectar intake by the number of visits during the uniformly distributed resource condition.
-With this calculation efficiency is a measure of the average amount of nectar a bat received per visit.
+One way to quantify individual foraging performance is efficiency. Here we measured efficiency by dividing the total amount of nectar intake by the number of visits during the uniformly distributed resource condition. Thus efficiency was a measure of the average amount of nectar a bat received per visit.
 
 ### Nectar intake rate
 
@@ -313,18 +298,12 @@ Nectar intake during the uniformly distributed resource condition was calculated
 
 ### Mean spatial overlap
 
-As previously proposed [@ohashi_trapline_2009], spatial overlap between foraging bats was calculated using Pianka's symmetrical index of niche overlap [@pianka_structure_1973].
-This index quantifies the spatial overlap of two individuals.
-In order to get one daily measurement for each bat, the spatial overlap between one bat and the five other bats of the respective group was calculated and then the mean of these five values was determined.
-The following equation was used to calculate Pianka's index $PI$ between for example bat 1 and 2:
+As previously proposed [@ohashi_trapline_2009], spatial overlap between foraging individuals was calculated using Pianka's symmetrical index of niche overlap [@pianka_structure_1973]. In order to obtain one daily measurement for each bat, the mean of the spatial overlaps between each focal bat and the five other bats of the respective group was calculated, using this general equation for Pianka's index $PI$ between two individuals:
 
 $$
 PI = \frac{\sum_{i}^{10}{p_{i1}}p_{i2}}{\sqrt{\sum_{i}^{10}p_{i1}\sum_{i}^{10}p_{i2}}}
 $$
-
-p is the proportion of visits to the ith flower made by bat 1 and 2 respectively.
-The value of $PI$ lies between 1 and 0.
-The higher the value of $PI$ calculated for two bats, the higher the spatial overlap between them.
+where p is the proportion of visits to the *i*th flower made by individual 1 and 2, respectively. $PI$'s values range between 1 and 0, with higher values corresponding to higher the spatial overlap between individuals.
 
 ## (f) Statistical analysis
 
@@ -410,10 +389,7 @@ Nevertheless, repeatability estimates during the first three days are already si
 ## (e) Latency to switch to a newly availably flower patch
 
 Contrary to results of a study with sticklebacks that used the same experimental design, individual bats did not differ in their latency to switch to a newly rewarding patch.
-The experiment with sticklebacks showed that individual fish differed consistently in their latency to switch to a newly available patch and that these differences increased the longer individuals remained in the same social group [@laskowski_competition_2013]. However, a subsequent experiment showed that switch latency was predicted by individual differences in other behaviors measured in different contexts like the tendency to shoal with other individuals. This showed that not only repeated social interactions played a role in shaping individual differences in switch delay [@laskowski_strong_2014].
-In the present experiment with nectarivorous bats, the main reason for the lack of individual differences in switch delay might have been the close proximity of the two patches and consequently the very low costs of switching to the newly available patch.
-Additionally, every time an artificial flower delivered a reward, the valve controlling the nectar flow was audible which could have served as a signal indicating the availability of the new patch as soon as one bat started to exploit it.
-In this case leaving the first flower patch might have not been due to competition avoidance but due to an audible signal and the benefit of being the first to switch was therefore very low.
+The experiment with sticklebacks showed that individual fish differed consistently in their latency to switch to a newly available patch and that these differences increased the longer individuals remained in the same social group [@laskowski_competition_2013]. However, a subsequent experiment showed that switch latency was predicted by individual differences in other behaviors measured in different contexts like the tendency to shoal with other individuals. This showed that not only repeated social interactions played a role in shaping individual differences in switch delay [@laskowski_strong_2014]. In the present experiment with nectarivorous bats, the main reason for the lack of individual differences in switch delay might have been the close proximity of the two patches and consequently the very low costs of switching to the newly available patch. Additionally, every time an artificial flower delivered a reward, the valve controlling the nectar flow was audible which could have served as a signal indicating the availability of the new patch as soon as one bat started to exploit it. In this case leaving the first flower patch might have not been due to competition avoidance but due to an audible signal and the benefit of being the first to switch was therefore very low.
 
 ## (f) Sampling of unrewarding patch
 
